@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*navbar*/
+.navbar {
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -moz-flexbox;
+    display: -o-flexbox;
+    margin: left;
+}
+
+/* HOMEPAGE HEADER/TITLE */
+.header {
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -moz-flexbox;
+    display: -o-flexbox;
+    padding: 60px;
+    text-align: center;
+    background: #33AFFF;
+    color: white;
+    font-size: 30px;
+   
+}
+
+/*homepage header content all sections & blog stylng*/
+.content {
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -moz-flexbox;
+    display: -o-flexbox;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 1000px;
+    /* width: -ms-flex(1 10000);
+    width: -moz-flex(1 10000);
+    width: -o-flex(1 10000);
+    width: -webkit-flex(1 10000); */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* styling the body, font and background color(gray) with some padding on body */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+    font-family: Arial;
+    margin: auto;
+}
+
+
+/* Create one equal columns that sit underneath one anotherr */
+/* center column for blog */
+.centercolumn {
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -moz-flexbox;
+    display: -o-flexbox;
+    float: center;
+    margin: auto;
+    width: 2000px;
+}
+
+
+
+/* Fake image template on blog */
+.fakeimg {
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -moz-flexbox;
+    display: -o-flexbox;
+    background-color: #aaa;
+    width: auto;
+    height: 300px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    float: center;
+}
+
+
+/* Add a card effect for articles on blog*/
+.card {
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -moz-flexbox;
+    display: -o-flexbox;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    float: center;
+}
+
+/* Clear floats after the columns on blog */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Footer on all pages */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .centercolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* contact form column*/
+.container {
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -moz-flexbox;
+    display: -o-flexbox;
+    text-align: center;
+  
+}
+
+input[type=text], textarea {
+    width: 50%;
+    padding: 12px 20px;
+   
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+message {
+    height: 300px;
+}
+
+input[type=submit] {
+    width: 10%;
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    float: left;
+    margin-top: 150px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+/* gallery source code*/
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+ img {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    transition: transform .2s, box-shadow .2s;
+    transition-timing-function: ease-in;
+    height: 200px;
+    width: 200px;
+    padding:3px;
+    
+}
+
+    img:hover {
+        transform: scale(1.7, 1.7);
+        box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14),0 9px 46px 8px rgba(0,0,0,0.12),0 11px 15px -7px rgba(0,0,0,0.2);
+        transition: transform .3s, box-shadow .3s;
+        transition-timing-function: ease-out;
+        
+    }
+    
+    /* gallery END */
